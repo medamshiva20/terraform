@@ -8,7 +8,7 @@ terraform {
 
 backend "s3"{
   bucket = "roboshop-devops-remote-state"
-  key = "lockID"
+  key = "foreach"
   region = "us-east-1"
   dynamodb_table = "remote-lock"
  }
