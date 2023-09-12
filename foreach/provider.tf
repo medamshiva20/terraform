@@ -6,12 +6,12 @@ terraform {
     }
   }
 
-# backend "s3"{
-#   bucket = "roboshop-devops-remote-state"
-#   key = "foreach-demo"
-#   region = "us-east-1"
-#  # dynamodb_table = "roboshop-lock"
-#  }
+backend "s3"{
+  bucket = "roboshop-devops-remote-state"
+  key = "foreach-demo"
+  region = "us-east-1"
+  dynamodb_table = "roboshop-lock"
+ }
 }
 
 provider "aws" {
