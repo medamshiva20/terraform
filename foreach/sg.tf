@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_tls" {
+resource "aws_security_group" "allow_all" {
   name        = "Roboshop"
   description = "Allow HTTP HTTPS SSH traffic"
 
