@@ -7,10 +7,10 @@ terraform{
     }
 backend "s3"{
 
-    bucket ="remote-devops-state"
+    bucket ="remote-devops-state-file"
     key = "minikube"
     region = "us-east-1"
-    dynamodb_table = "roboshop-remote-lock"
+    dynamodb_table = "roboshop-remote-lock-new"
    }
 }
 

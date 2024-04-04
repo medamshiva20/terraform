@@ -7,8 +7,8 @@ module "minikube" {
   aws_instance_type = "t3.medium"
   # ~ --> home dir, you should have terraform.pub in your home
   ssh_public_key = "~/.ssh/id_rsa.pub" # replace with your public key name and path
-  aws_subnet_id = "subnet-079f3bfd907f848b4" # any public subnet in any VPC, I am using default VPC subnet
-  hosted_zone = "medamdevops.online" # replace with your domain
+  aws_subnet_id = "subnet-08655449baa7ad1b2" # any public subnet in any VPC, I am using default VPC subnet
+  hosted_zone = "sivadevops.website" # replace with your domain
   hosted_zone_private = false
 
   tags = {
